@@ -1,0 +1,13 @@
+version: '2.27'
+services:
+   playwright-test :
+    image : playwrightfirst-test
+    build :
+      context : .
+      dockerfile : ./Dockerfile
+    command : npm run usePageObjects-Chrome
+    volumes :
+        - ./playwright-report/:/app/playwright-report
+        - ./test-results/:/app/test-results
+
+    
