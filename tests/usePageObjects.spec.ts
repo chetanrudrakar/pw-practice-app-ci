@@ -36,7 +36,7 @@ test.beforeEach( async ({page}) =>{
        await pm.getDatePickerPage().selectTheCommonRangePicker(1,2);
 
     })
-
+    
     test.only('navigate to date picker {tag : @smoke}', async({page})=>{
         const pm=new PageManager(page)
         await  pm.getNavigationPage().formLayoutPage();
@@ -45,3 +45,5 @@ test.beforeEach( async ({page}) =>{
         
 
     })
+
+   
