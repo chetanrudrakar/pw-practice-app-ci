@@ -10,6 +10,7 @@
     "ng": "ng",
     "start": "ng serve",
     "usePageObjects-Chrome": "npx playwright test usePageObjects.spec.ts --project=\"Google Chrome\"",
+    "usePageObjects-Chromium": "npx playwright test usePageObjects.spec.ts --project=chromium",
     "autoWaiting-URL": "URL=http://uitestingplayground.com/ajax npx playwright test autoWaiting.spec.ts --project=\"Google Chrome\" --headed"
   },
   "dependencies": {
