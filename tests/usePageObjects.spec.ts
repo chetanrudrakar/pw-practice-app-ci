@@ -41,8 +41,6 @@ test.beforeEach( async ({page}) =>{
         const pm=new PageManager(page)
         await  pm.getNavigationPage().formLayoutPage();
         await  pm.getNavigationPage().datePickerPage();
-        
-        
 
     })
 
