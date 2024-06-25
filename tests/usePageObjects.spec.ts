@@ -7,7 +7,7 @@ test.beforeEach( async ({page}) =>{
     
     })
 
-    test('navigate to form page {tag : @smoke}', async({page})=>{
+    test.only('navigate to form page {tag : @smoke}', async({page})=>{
         const pm=new PageManager(page)
         await  pm.getNavigationPage().formLayoutPage();
         await  pm.getNavigationPage().datePickerPage();
@@ -35,13 +35,4 @@ test.beforeEach( async ({page}) =>{
        await pm.getDatePickerPage().selectTheCommonDatePicker(1);
        await pm.getDatePickerPage().selectTheCommonRangePicker(1,2);
 
-    })
-    
-    test.only('navigate to date picker {tag : @smoke}', async({page})=>{
-        const pm=new PageManager(page)
-        await  pm.getNavigationPage().formLayoutPage();
-        await  pm.getNavigationPage().datePickerPage();
-
-    })
-
-   
+    })  
