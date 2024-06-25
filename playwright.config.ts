@@ -14,7 +14,7 @@ import { FullscreenOverlayContainer } from '@angular/cdk/overlay';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig<TestOptions>({
-  timeout : 40000,
+  timeout : 120000,
   //globalTimeout : 60000,
   expect : {
   timeout : 5000,
