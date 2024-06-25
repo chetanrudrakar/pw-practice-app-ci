@@ -141,6 +141,7 @@ export default defineConfig<TestOptions>({
     command : 'npm run start',
     url : 'http://localhost:4200',
     reuseExistingServer : true,
+    timeout : 120000,
     
   }
 });
