@@ -7,7 +7,7 @@ test.beforeEach( async ({page}) =>{
     
     })
 
-    test.only('navigate to form page {tag : @smoke}', async({page})=>{
+    test('navigate to form page {tag : @smoke}', async({page})=>{
         const pm=new PageManager(page)
         await  pm.getNavigationPage().formLayoutPage();
         await  pm.getNavigationPage().datePickerPage();
