@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: npm install --force
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps --force
+      uses: playwright-community/playwright-github-action@v1
     - name: Run Playwright tests
       run: npm run usePageObjects-Chromium
     - uses: actions/upload-artifact@v4
