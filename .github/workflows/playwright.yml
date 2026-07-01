@@ -15,6 +15,10 @@ jobs:
         node-version: 20
     - name: Install dependencies
       run: npm install --force
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libasound2 libffi7 libx264-163
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps --force
     - name: Run Playwright tests
